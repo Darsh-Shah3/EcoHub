@@ -1,0 +1,130 @@
+:root{
+    --dark-green : #1c6758;
+    --light-green: #3D8361;
+    --sand: #D6CDA4; 
+    --dark-sand: #d6c36e;
+
+    --offwhite:#EEF2E6;
+    --white: #fff;
+
+    --h1-font:5rem;
+    --h2-font:4rem; 
+    --p-font:1.1rem;
+}
+header{ 
+    width: 100%;
+    background-color: var(--light-green  );
+}
+#navbar-main{
+    width: 100%;
+    background-color: var(--light-green);
+}
+.brand-name{
+    padding: 0;
+    font-size: 1.9rem;
+    font-weight: bold;
+    color: white;
+    display: inline;
+    margin: 0 !important;
+}
+#search-bar{
+    width: 65%;
+    height: 2.7rem;
+    font-size: 1.5rem;
+    border-radius: 15rem;
+    border: none;
+}
+a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+}
+.sec-nav-link{
+    font-size: 1rem;
+}
+#showin-nav{
+    width: 50%;
+}
+.dropdown-opt{
+    font-size: 1rem;
+}
+@media only screen and (width <= 76.8rem) {
+    #showin-nav{
+        width: 80%;
+    }
+    
+}
+@media only screen and (width <= 42.5rem) {
+    
+    .sec-nav-link{
+        font-size: 0.5rem;
+    }
+    .dropdown-opt{
+        font-size: 0.5rem;
+    }
+    #search-bar{
+        width: 50%;
+        height: 2rem;
+        font-size: 1rem;
+        border-radius: 15rem;
+        border: none;
+    }
+    .brand-name{
+        padding: 0;
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: white;
+        display: inline;
+        margin: 0 !important;
+    }
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,4fr);
+    gap: 20px;
+}
+
+.column-1 img{
+    height: 400px;
+    width: 400px;
+}
+
+.column-2 h1{
+    text-align: center;
+}
+
+.column-2 .other-options{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.column-2 .other-options .other-options-content{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media only screen and (max-width:768px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(1, 4fr);
+        gap: 20px;
+    }
+
+    .column-1{
+        text-align: center;
+    }
+
+    .column-1 img{
+        height: 300px;
+        width: 300px;
+    }
+}  
