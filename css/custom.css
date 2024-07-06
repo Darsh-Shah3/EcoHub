@@ -1,0 +1,257 @@
+:root{
+    --dark-green : #1c6758;
+    --light-green: #3D8361;
+    --sand: #D6CDA4;
+    --dark-sand: #d6c36e;
+
+    --offwhite:#EEF2E6;
+    --white: #fff;
+
+    --h1-font:5rem; 
+    --h2-font:4rem;
+    --p-font:1.1rem;
+}
+header{
+    width: 100%;
+    background-color: var(--light-green  );
+}
+#navbar-main{
+    width: 100%;
+    background-color: var(--light-green);
+}
+.brand-name{
+    padding: 0;
+    font-size: 1.9rem;
+    font-weight: bold;
+    color: white;
+    display: inline;
+    margin: 0 !important;
+}
+#search-bar{
+    width: 65%;
+    height: 2.7rem;
+    font-size: 1.5rem;
+    border-radius: 15rem;
+    border: none;
+}
+a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+}
+.sec-nav-link{
+    font-size: 1rem;
+}
+
+#sec-nav-bar .dropdown-item{
+    color:#1c6758;
+}
+
+#showin-nav{
+    width: 50%;
+}
+.dropdown-opt{
+    font-size: 1rem;
+}
+#team{
+    flex-direction: row;
+}
+#sec-nav-bar{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: var(--white); 
+    color: var(--dark-green);
+    width: 100%;
+}
+@media only screen and (width <= 76.8rem) {
+    #showin-nav{
+        width: 80%;
+    }
+    #team{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media only screen and (width <= 42.5rem) {
+    
+    .sec-nav-link{
+        font-size: 0.5rem;
+    }
+    .dropdown-opt{
+        font-size: 0.5rem;
+    }
+    #search-bar{
+        width: 50%;
+        height: 2rem;
+        font-size: 1rem;
+        border-radius: 15rem;
+        border: none;
+    }
+    .brand-name{
+        padding: 0;
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: white;
+        display: inline;
+        margin: 0 !important;
+    }
+}
+.card-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.card{
+    background-color: var(--white);
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 15px;     */
+    padding: 1rem;
+    max-width: calc(100% / 3 - 2rem);
+    margin: 1rem;
+}
+
+.img-wrapper{
+    height:15vw;
+}
+
+.img-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (max-width:768px) {
+    .card-wrapper{
+        flex-direction: column;
+    }
+    .card{
+        max-width: 100%;
+    }
+
+    .img-wrapper{
+        height: 30vw;
+    }
+    
+}
+
+.ngo-heading{
+    text-align: center;
+    margin: 2rem;
+    padding:2rem;
+    color: var(--light-green);
+}
+
+#footer{
+    background-color: var(--dark-green);
+    margin: 0;
+    padding: 0;
+}
+#footer div{
+    color: #fff;
+    
+}
+.main-profile-platform-logo{
+    margin: 0.7rem 1rem 0.9rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 1.25rem;
+}
+.carousel-inner{
+    width:83%;
+    margin:auto;
+    align-content: center;
+}
+
+.div-seven{
+    z-index:1;
+}
+.carousel-1-heading{
+    margin-top: 5%;
+    align-items: center;
+}
+
+.carousel-1-heading-text{
+    color:var(--dark-green);
+    text-align:center;
+}
+.caption{
+    align-items: start;
+}
+
+#grad {
+    background-image: linear-gradient(none,gray);
+  }
+
+.carousel-1-heading-alignment{
+    text-align: left;
+    /* font-size: large; */
+    font-weight: bold;
+}
+.influencer-img{
+    height: 12.5rem;
+    width: 12.5rem;
+    border-radius: 6.25rem;
+}
+.influencer-img-name{
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5625rem;
+}
+.influencer-div-show{
+    margin: 0px 2.5rem;
+    
+}
+.influencer-main-div-show{
+    background-color: var(--light-green);
+    padding-top: 1.25rem;
+    position: relative;
+    display: block;
+    overflow-x: auto;
+}
+#inf-xyz{
+    padding: 50px 0;
+}
+.fa{
+    color: black;
+}
+.counter-card{
+    width: 30%;
+    height: 100%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: var(--sand);
+    
+}
+.counter-card span{
+    display: block;
+    text-align: center;
+    font-size: 3rem;
+}
+#counter-div{
+    flex-direction: row;
+}
+@media only screen and (max-width : 768px) {
+    #counter-div{
+        align-items: center;
+        flex-direction: column;
+       
+    }
+    .counter-card{
+        width: 80%;
+        margin-top: 2rem;
+    }
+    .counter-card h1{
+        font-size: 1.5rem !important;
+    }
+    .counter-card span{
+        
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-width : 425px) {
+    .influencer-img{
+        height: 8rem;
+        width: 8rem;
+        border-radius: 4rem;
+    }
+}
